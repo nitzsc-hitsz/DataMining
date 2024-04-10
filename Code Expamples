@@ -1,0 +1,22 @@
+1、强制删除数据库 drop database if exists database_name cascade；
+2、创建数据库     create database if not exists database_name；
+3、删除表         drop table table_name;
+4、进入数据库     use database_name;
+
+5、使用脚本读取数据的方法
+  代码
+  create table if not exists mediamatch_usermsg(
+  *列名称 *数据类型,
+  )
+  row format delimited fields terminated by '*分隔符' tblproperties ('skip.header.line.count'='1');
+  load data local inpath 'D:\DataMiningProject\Project-1\data\mediamatch_usermsg.csv' overwrite into table mediamatch_usermsg;
+
+  编辑成.sql文件
+  在hive.cmd中运行  source *文件名.sql
+
+6、hive创建表格不能识别逗号分隔符
+  需要将逗号csv文件转换为制表符分隔的txt文件，将制表符替换为分号，再转化为csv文件
+  为避免中文乱码，将txt文件另存为UTF-8编码格式
+
+7、months_between() ——函数内日期格式中年月日应用 ‘-’ 分隔，不能用 ‘/’ 分隔，否则函数只会输出 Null
+8、列表数据降重操作     .distinct() 
