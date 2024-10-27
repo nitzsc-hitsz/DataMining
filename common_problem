@@ -1,2 +1,0 @@
-如果cmd不能识别python或pip命令，将python.exe和pip.py文件目录添加到系统变量的Path目录里即可
-jupyter添加标题，选择markdown输入文本后前面加一个井号和空格，最后shift+Enter
