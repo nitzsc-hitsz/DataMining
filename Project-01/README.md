@@ -1,5 +1,6 @@
 ### 工程名称：基于广电用户信息的数据仓库设计
 
-基于：`PySpark`、`Hadoop`、`Hive`以及`MySQL  `
+基于：`PySpark`、`Hadoop`、`Hive`以及`MySQL`  
+
 任务1：将原始数据存入数据仓库的`ODS`层  
 任务2：对数据进行清洗并将结果储存至`DWD`层  
